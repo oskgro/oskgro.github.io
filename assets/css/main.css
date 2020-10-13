@@ -2606,7 +2606,7 @@ input, select, textarea {
         .image.app {
             display: block;
             margin: 0 0 2em 0;
-            width: 10%;
+            width: 100%;
         }
 
 		.image.main {

@@ -97,8 +97,9 @@ input, select, textarea {
 		box-sizing: inherit;
 	}
 
+	/*background colour of subpage*/
 	body {
-		background: #312450;
+		background: #f8f8f8;
 	}
 
 		body.is-preload *, body.is-preload *:before, body.is-preload *:after {
@@ -115,7 +116,7 @@ input, select, textarea {
 /* Type */
 
 	body, input, select, textarea {
-		color: rgba(255, 255, 255, 0.55);
+		color: #000000; /*normal text colour*/
 		font-family: Arial, Helvetica, sans-serif;
 		font-size: 16.5pt;
 		font-weight: normal;
@@ -151,18 +152,18 @@ input, select, textarea {
 		-webkit-transition: color 0.2s ease, border-bottom-color 0.2s ease;
 		-ms-transition: color 0.2s ease, border-bottom-color 0.2s ease;
 		transition: color 0.2s ease, border-bottom-color 0.2s ease;
-		border-bottom: dotted 1px rgba(255, 255, 255, 0.35);
+		border-bottom: dotted 1px rgba(255, 255, 255, 0.35); /*effect?? TODO*/
 		color: inherit;
 		text-decoration: none;
 	}
 
 		a:hover {
 			border-bottom-color: transparent;
-			color: #ffffff;
+			color: #ffffff; /*TODO*/
 		}
 
 	strong, b {
-		color: #ffffff;
+		color: #000000; /*font colour bold text*/
 		font-weight: bold;
 	}
 
@@ -175,7 +176,7 @@ input, select, textarea {
 	}
 
 	h1, h2, h3, h4, h5, h6 {
-		color: #ffffff;
+		color: #000000; /*font colour headlines*/
 		font-weight: bold;
 		line-height: 1.5;
 		margin: 0 0 0.5em 0;
@@ -197,10 +198,11 @@ input, select, textarea {
 		}
 
 			h1.major:after {
-				background-image: -moz-linear-gradient(to right, #5e42a6, #b74e91);
-				background-image: -webkit-linear-gradient(to right, #5e42a6, #b74e91);
-				background-image: -ms-linear-gradient(to right, #5e42a6, #b74e91);
-				background-image: linear-gradient(to right, #5e42a6, #b74e91);
+				/*colour of line under headline on subpabes*/
+				background-image: -moz-linear-gradient(to right, #aaaaaa, #eaeaea);
+				background-image: -webkit-linear-gradient(to right, #aaaaaa, #eaeaea);
+				background-image: -ms-linear-gradient(to right, #aaaaaa, #eaeaea);
+				background-image: linear-gradient(to right, #aaaaaa, #eaeaea);
 				-moz-transition: max-width 0.2s ease;
 				-webkit-transition: max-width 0.2s ease;
 				-ms-transition: max-width 0.2s ease;
@@ -275,16 +277,16 @@ input, select, textarea {
 	}
 
 	blockquote {
-		border-left: solid 4px rgba(255, 255, 255, 0.15);
+		border-left: solid 4px #e5cc44; /*colour of bar left of blockquotes*/
 		font-style: italic;
 		margin: 0 0 2em 0;
 		padding: 0.5em 0 0.5em 2em;
 	}
 
 	code {
-		background: rgba(255, 255, 255, 0.05);
+		background: #eaeaea; /*background colour of code*/
 		border-radius: 0.25em;
-		border: solid 1px rgba(255, 255, 255, 0.15);
+		border: solid 1px #aaaaaa; /*border colour of code*/
 		font-family: "Courier New", monospace;
 		font-size: 0.9em;
 		margin: 0 0.25em;
@@ -307,7 +309,7 @@ input, select, textarea {
 
 	hr {
 		border: 0;
-		border-bottom: solid 1px rgba(255, 255, 255, 0.15);
+		border-bottom: solid 1px #aaaaaa; /*colour of horizontal lines*/
 		margin: 2em 0;
 	}
 
@@ -1795,6 +1797,7 @@ input, select, textarea {
 
 		}
 
+/*TODO*/
 /* Box */
 
 	.box {
@@ -1816,6 +1819,7 @@ input, select, textarea {
 			padding: 0;
 		}
 
+/*TODO*/
 /* Button */
 
 	input[type="submit"],
@@ -1833,9 +1837,9 @@ input, select, textarea {
 		transition: border-color 0.2s ease;
 		background-color: transparent;
 		border: solid 1px !important;
-		border-color: rgba(255, 255, 255, 0.15) !important;
+		border-color: #aaaaaa !important; /*border colour button*/
 		border-radius: 3em;
-		color: #ffffff !important;
+		color: #616161 !important; /*text colour button*/
 		cursor: pointer;
 		display: inline-block;
 		font-size: 0.6em;
@@ -1914,8 +1918,8 @@ input, select, textarea {
 		input[type="button"].primary,
 		button.primary,
 		.button.primary {
-			background-color: #ffffff;
-			color: #312450 !important;
+			background-color: #ffffff; /*border colour button*/
+			color: #616161 !important; /*text colour button*/
 		}
 
 			input[type="submit"].primary:after,
@@ -1945,7 +1949,7 @@ input, select, textarea {
 		input[type="button"]:hover,
 		button:hover,
 		.button:hover {
-			border-color: rgba(255, 255, 255, 0.55) !important;
+			border-color: #414141 !important; /*colour when hovering over button*/
 		}
 
 			input[type="submit"]:hover:after,
@@ -1965,7 +1969,7 @@ input, select, textarea {
 			input[type="button"]:hover:active,
 			button:hover:active,
 			.button:hover:active {
-				border-color: #ffffff !important;
+				border-color: #000000 !important; /*colour of active button*/
 			}
 
 				input[type="submit"]:hover:active:after,
@@ -1976,6 +1980,7 @@ input, select, textarea {
 					opacity: 0.1;
 				}
 
+/* TODO */
 /* Features */
 
 	.features {
@@ -2220,6 +2225,8 @@ input, select, textarea {
 
 		}
 
+
+/* TODO change colour if we use it*/
 /* Form */
 
 	form {
@@ -2482,6 +2489,7 @@ input, select, textarea {
 		opacity: 1.0;
 	}
 
+/* TODO change colour if we use it*/
 /* Icon */
 
 	.icon {
@@ -2618,6 +2626,10 @@ input, select, textarea {
 			.image.main img {
 				width: 100%;
 			}
+		.image.symbol {
+			display: inline-block;
+			width: 50em;
+		}
 
 /* List */
 
@@ -2647,7 +2659,7 @@ input, select, textarea {
 		}
 
 			ul.alt li {
-				border-top: solid 1px rgba(255, 255, 255, 0.15);
+				border-top: solid 1px rgba(255, 255, 255, 0.15); /*effect TODO*/
 				padding: 0.5em 0;
 			}
 
@@ -2841,7 +2853,7 @@ input, select, textarea {
 	}
 
 		ul.menu > li {
-			border-left: solid 1px rgba(255, 255, 255, 0.15);
+			border-left: solid 1px rgba(255, 255, 255, 0.15); /*effect??? TODO*/
 			display: inline-block;
 			line-height: 1;
 			margin-left: 1.5em;
@@ -2873,7 +2885,7 @@ input, select, textarea {
 	}
 
 	header p {
-		color: rgba(255, 255, 255, 0.35);
+		color: rgba(255, 255, 255, 0.35); /*effect??? TODO */
 		position: relative;
 		margin: 0 0 1.5em 0;
 	}
@@ -2898,6 +2910,7 @@ input, select, textarea {
 		line-height: 1.5em;
 	}
 
+/* TODO change colour if we use it*/
 /* Split */
 
 	.split {
@@ -3028,7 +3041,7 @@ input, select, textarea {
 				-webkit-transition: opacity 1s ease;
 				-ms-transition: opacity 1s ease;
 				transition: opacity 1s ease;
-				background: rgba(49, 36, 80, 0.9);
+				background: rgba(234, 234, 234, 0.9); /*colour of image placeholders -> used when images are not fully visible yet*/
 				content: '';
 				display: block;
 				height: 100%;
@@ -3069,12 +3082,13 @@ input, select, textarea {
 				opacity: 1;
 			}
 
+		/*background colour of 2nd child in spotlight -> used for chapters -> overrides wrapper colour*/
 		.spotlights > section:nth-child(2) {
-			background-color: rgba(0, 0, 0, 0.05);
+			background-color: #f4f4f4;
 		}
-
+		/*background colour of 2nd child in spotlight -> used for chapters -> overrides wrapper colour*/
 		.spotlights > section:nth-child(3) {
-			background-color: rgba(0, 0, 0, 0.1);
+			background-color: #e6e6e6;
 		}
 
 		.spotlights > section.inactive > .image:before,
@@ -3137,6 +3151,7 @@ input, select, textarea {
 
 		}
 
+/*TODO change colour if we add a table*/
 /* Table */
 
 	.table-wrapper {
@@ -3240,33 +3255,38 @@ input, select, textarea {
 				}
 
 			}
-
+/*TODO*/
+		/*background colour of wrapper alt -> used for footer on subpage*/
 		.wrapper.alt {
-			background-color: #261c3e;
+			background-color: #e5cc44;
 		}
 
+		/*background colour of wrapper style1 -> used for intro part*/
 		.wrapper.style1 {
-			background-color: #5e42a6;
+			background-color: #f8f8f8;
 		}
 
+		/*background colour of wrapper style1-alt -> used for footer on mainpage*/
 		.wrapper.style1-alt {
-			background-color: #493382;
+			background-color: #e5cc44;
 		}
 
+		/*background colour of wrapper style2 -> used for chapters*/
 		.wrapper.style2 {
-			background-color: #5052b5;
+			background-color: #f6f6f6;
 		}
 
+/* TODO change if we use it */
 		.wrapper.style2-alt {
-			background-color: #3e4094;
+			background-color: #945609;
 		}
 
 		.wrapper.style3 {
-			background-color: #b74e91;
+			background-color: #54abb7;
 		}
 
 		.wrapper.style3-alt {
-			background-color: #953d75;
+			background-color: #1da60b;
 		}
 
 		.wrapper.fullscreen {
@@ -3371,19 +3391,21 @@ input, select, textarea {
 
 /* Header */
 
+	/*header colour of subpage*/
 	#header {
 		display: -moz-flex;
 		display: -webkit-flex;
 		display: -ms-flex;
 		display: flex;
-		background-color: #5e42a6;
+		background-color: #e5cc44;
 		cursor: default;
 		padding: 1.75em 2em;
 	}
 
+		/*font colour of title in subpage header*/
 		#header > .title {
 			border: 0;
-			color: #ffffff;
+			color: #000000;
 			display: block;
 			font-size: 1.25em;
 			font-weight: bold;
@@ -3415,7 +3437,7 @@ input, select, textarea {
 
 					#header > nav > ul > li a {
 						border: 0;
-						color: rgba(255, 255, 255, 0.35);
+						color: #000000; /*font colour in navigation on subpabe*/
 						display: inline-block;
 						font-size: 0.6em;
 						font-weight: bold;
@@ -3423,10 +3445,12 @@ input, select, textarea {
 						text-transform: uppercase;
 					}
 
+						/*font colour when hovering over chapter on subpage navigation*/
 						#header > nav > ul > li a:hover {
-							color: rgba(255, 255, 255, 0.55);
+							color: #808080;
 						}
 
+						/*font colour of current position on subpage navigation*/
 						#header > nav > ul > li a.active {
 							color: #ffffff;
 						}
@@ -3452,8 +3476,9 @@ input, select, textarea {
 					padding: 1em 0;
 				}
 
+				/*colour of bar separating header and navigation on subpage on small devices*/
 				#header > nav {
-					border-top: solid 1px rgba(255, 255, 255, 0.15);
+					border-top: solid 1px #ccbd66;
 					text-align: inherit;
 				}
 
@@ -3510,7 +3535,7 @@ input, select, textarea {
 		}
 
 	#footer > .inner a {
-		border-bottom-color: rgba(255, 255, 255, 0.15);
+		border-bottom-color: #ccbd66; /*colour of bar under link in footer*/
 	}
 
 		#footer > .inner a:hover {
@@ -3519,7 +3544,7 @@ input, select, textarea {
 
 	#footer > .inner .menu {
 		font-size: 0.8em;
-		color: rgba(255, 255, 255, 0.15);
+		color: #616161; /*font colour in footer*/
 	}
 
 	#header + #wrapper + #footer > .inner {
@@ -3530,7 +3555,7 @@ input, select, textarea {
 
 	#sidebar {
 		padding: 2.5em 2.5em 0.5em 2.5em ;
-		background: #312450;
+		background: #e5cc44; /*background colour of navigation bar*/
 		cursor: default;
 		height: 100vh;
 		left: 0;
@@ -3743,7 +3768,7 @@ input, select, textarea {
 			-ms-transition: color 0.2s ease;
 			transition: color 0.2s ease;
 			border: 0;
-			color: rgba(255, 255, 255, 0.35);
+			color: #000000; /*font colour of non-highlighted chapters in navigation*/
 			display: block;
 			font-size: 0.6em;
 			font-weight: bold;
@@ -3766,15 +3791,17 @@ input, select, textarea {
 				width: 100%;
 			}
 
+			/*colour of separation bar in navigation*/
 			#sidebar nav a:before {
-				background: #3c2c62;
+				background: #ccbd66;
 			}
 
+			/*colour gradient of separation bar indicating current position in side navigation */
 			#sidebar nav a:after {
-				background-image: -moz-linear-gradient(to right, #5e42a6, #b74e91);
-				background-image: -webkit-linear-gradient(to right, #5e42a6, #b74e91);
-				background-image: -ms-linear-gradient(to right, #5e42a6, #b74e91);
-				background-image: linear-gradient(to right, #5e42a6, #b74e91);
+				background-image: -moz-linear-gradient(to right, #aaaaaa, #eaeaea);
+				background-image: -webkit-linear-gradient(to right, #aaaaaa, #eaeaea);
+				background-image: -ms-linear-gradient(to right, #aaaaaa, #eaeaea);
+				background-image: linear-gradient(to right, #aaaaaa, #eaeaea);
 				-moz-transition: max-width 0.2s ease;
 				-webkit-transition: max-width 0.2s ease;
 				-ms-transition: max-width 0.2s ease;
@@ -3782,10 +3809,12 @@ input, select, textarea {
 				max-width: 0;
 			}
 
+			/*font colour when hovering over text in navigation*/
 			#sidebar nav a:hover {
-				color: rgba(255, 255, 255, 0.55);
+				color: #808080;
 			}
 
+			/*font colour of current position in navigation bar*/
 			#sidebar nav a.active {
 				color: #ffffff;
 			}
@@ -3861,9 +3890,10 @@ input, select, textarea {
 						padding: 0;
 					}
 
+						/*colour indicating current position in top navigation bar*/
 						#sidebar nav a:after {
 							background-image: none;
-							background-color: #b74e91;
+							background-color: #000000;
 						}
 
 		}

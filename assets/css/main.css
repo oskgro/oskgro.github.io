@@ -159,7 +159,7 @@ input, select, textarea {
 
 		a:hover {
 			border-bottom-color: transparent;
-			color: #ffffff; /*TODO*/
+			color: #808080; /*colour when hovering over links*/
 		}
 
 	strong, b {
@@ -198,7 +198,7 @@ input, select, textarea {
 		}
 
 			h1.major:after {
-				/*colour of line under headline on subpabes*/
+				/*colour of line under headline on subpages*/
 				background-image: -moz-linear-gradient(to right, #aaaaaa, #eaeaea);
 				background-image: -webkit-linear-gradient(to right, #aaaaaa, #eaeaea);
 				background-image: -ms-linear-gradient(to right, #aaaaaa, #eaeaea);
@@ -282,6 +282,9 @@ input, select, textarea {
 		margin: 0 0 2em 0;
 		padding: 0.5em 0 0.5em 2em;
 	}
+		blockquote a.source {
+			font-style: normal; /*source of quote*/
+		}
 
 	code {
 		background: #eaeaea; /*background colour of code*/
@@ -2626,9 +2629,9 @@ input, select, textarea {
 			.image.main img {
 				width: 100%;
 			}
+
 		.image.symbol {
-			display: inline-block;
-			width: 50em;
+			width: 7.5%;
 		}
 
 /* List */
@@ -3263,7 +3266,7 @@ input, select, textarea {
 
 		/*background colour of wrapper style1 -> used for intro part*/
 		.wrapper.style1 {
-			background-color: #f8f8f8;
+			background-color: #f6f6f6; /*hintergrund*/
 		}
 
 		/*background colour of wrapper style1-alt -> used for footer on mainpage*/

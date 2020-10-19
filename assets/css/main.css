@@ -2630,9 +2630,6 @@ input, select, textarea {
 				width: 100%;
 			}
 
-		.image.symbol {
-			width: 7.5%;
-		}
 
 /* List */
 
@@ -3946,3 +3943,24 @@ input, select, textarea {
 			}
 
 		}
+
+/* Heading */
+.heading img {
+	float: left;
+	margin-right: 1em;
+	width: 3.5rem;
+}
+@media screen and (max-width: 980px) {
+	.heading img {
+		width: 3.25rem;
+	}
+}
+@media screen and (max-width: 736px) {
+	.heading img {
+		width: 3rem;
+	}
+}
+
+.heading h1 {
+	position: relative;
+}

@@ -6,7 +6,7 @@
 -->
 <html>
 <head>
-    <title>Results</title>
+    <title>Method</title>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
     <link rel="stylesheet" href="assets/css/main.css" />
@@ -26,51 +26,42 @@
     <section id="main" class="wrapper">
         <div class="inner">
             <h1 class="major">Method</h1>
-            <h3>TODO:</h3>
+            <p>The following describes how we would conduct the study, if we had the time and resources.</p>
+
+            <h3>Implementation of the Study</h3>
+            <p>
+                We propose a field study to answer our research question, as a study conducted in the natural environment preserves context. Context is an important factor when gaining insights on password memory, as people have other things on their minds than their passwords in daily life but still need to be able to remember the passwords when they need them.<br>
+                We will divide the participants into two groups: One group will be using rhythm-based passwords, while the control group will be using conventional text-bases passwords. In each password-group, we will assign the passwords a security-category based on number of attempts necessary to crack password in brute force attack. There are three such categories: easy, medium and hard to crack passwords.
+            </p>
+
+            <h3>Selection of Participants</h3>
+            <p>
+                As our study is quantitative research, a larger number of participants is necessary to obtain meaningful results. For the study, the participants are divided into two groups. Therefore, we strive to recruit a minimum of 30 per group, to ensure they are large enough for statistical significance. There is no upper limit on participants, as more participants lead to a result with a smaller confidence interval i.e. a result more robust to outliers, and due to the research tool do not increase the workload of the study.<br>
+                To ensure the results are representative, the participants should be representative of the population i.e. include participants from all ages and ensure gender balance.<br>
+                Furthermore, participants at the “extreme ends” of the demographic should be included, i.e.:
+                <ul>
+                    <li>elderly people and children</li>
+                    <li>participants with visual- and hearing-impairements</li>
+                    <li>digital natives and participants new to mobile phones</li>
+                    <li>participants who play music instruments as well as participants describing themselves as unmusical</li>
+                </ul>
+            The participants will be randomly sorted into rhythm- and text-password groups, and sort themselves into password-strength categories by setting their password.
+            </p>
+
+            <h3>Evaluation of Results</h3>
+            <p>To determine whether rhythm-based passwords are easier to remember than text-based passwords, we will compare the login success-ratio of both password-type groups. We assume that the group with the higher login succeeds-ratio was able to remember their passwords better.<br>
+                Furthermore, we will compare the success-ratio within every password security category.</p>
+
+            <h3>Limitations</h3>
             <ul>
-                <li>plan for executing the study
-                    <ul>
-                        <li>evaluate short term memory</li>
-                        <li>evaluate long term memory</li>
-                    </ul>
-                </li>
-                <li>plan for evaluating the results
-                    <ul>
-                        <li>compare failure/success-ratio of rhythm and text passwords in every security-group</li>
-                    </ul>
-                </li>
-                <li>How are passwords compared?
-                    <ul>
-                        <li>determine number of attempts to crack password in brute force attack</li>
-                        <li>sort password into x security-categories based on number of attempts</li>
-                    </ul>
-                </li>
-                <li>What are the different groups?
-                    <ul>
-                        <li>two main groups: short term memory and long term memory</li>
-                        <li>two subgroups: rhythm passwords and text passwords</li>
-                        <li>every subgroup divided of x security groups</li>
-                    </ul>
-                </li>
-                <li>How are participants sorted into groups?
-                    <ul>
-                        <li>randomly sort participants into rhythm & text group</li>
-                        <li>participants set their password -> sort themself into password-strength group</li>
-                    </ul>
-                </li>
-                <li>limitations / difficulties
-                    <ul>
-                        <li>different repetition intervals could bias the results </li>
-                    </ul>
-                </li>
-                <li>data handling / privacy
-                    <ul>
-                        <li>What user data is stored? </br>
-                            -> passwords stored locally, only failure/success + time of attempt stored
-                        </li>
-                    </ul>
-                </li>
+                <li>Different repetition intervals could bias the results. If participants repeat their passwords more frequently, they are more likely to remember their password regardless of the password-type. Thus, participant might be better at remembering rhythm-based passwords since they practice entering the rhythm more to get used to the new input method.</li>
+                <li>Accidental mistakes during password input cannot be distinguished from misremembered password. As all erroneous inputs are counted as misremembered passwords, the login success-ratio of the rhythm-based password might be lower than the actual memory success-ratio since participants might make more accidental mistakes using a new input method.</li>
+                <li>There is a trade-off between statistical significance and meaningfulness of the results. On the one hand, passwords of different security level are hard to compare leading to less meaningful results. On the other hand, however, splitting participants into too many groups makes results sensitive to outliers and reducing the statistical significance.</li>
             </ul>
+
+            <h3>Handling of Data and Privacy</h3>
+            <p>Our PassBeat tool will store the password locally on the participants device. Only the success or failure and time of a login attempt will be transmitted. The study will be anonymous, no personal information about participants will be collected.</p>
+
         </div>
     </section>
 

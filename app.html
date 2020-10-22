@@ -26,22 +26,18 @@
     <section id="main" class="wrapper">
         <div class="inner">
             <h1 class="major">PassBeat Tool</h1>
-            <h3>Purpose of PassBeat:</h3>
-            <ul>
-                <li>research tool to gather data on remembering passwords</li>
-                <li>to be used for conducting field study</li>
-            </ul>
+            <h3>Purpose of PassBeat</h3>
+            <p>The purpose of PassBeat is to test the users' ability to remember rhythm-based authenitcation methods as compared to text-based passwords. Many studies have suggested that rhythms, melodies and music are relatively easy for humans to rememeber, and some studies also suggest that text-based passwords are relatively difficult to remember. Furthermore, the ability to remember the latter decreases as its security increases.</p>
+            <p>The app will serve as a tool when conducting field studies. The idea is that the app should serve this purpose automatically once downloaded on a user's smartphone, logging any data that is deemed interesting in regard to the research questions.</p>
 
-            <h3>How to use PassBeat:</h3>
-            <h4>set a password</h4>
-            <p>TODO: image of password setup frame</p>
-            <h4>login</h4>
+            <h3>How to use PassBeat</h3>
+            <h4>Setting a password</h4>
+            <img src="images/phone_setup_hd.png" alt="Setup prototype" style="height:600px;max-width:500px;width: expression(this.width > 500 ? 500: true);"/>
+            <p>Upon entering the setup-view, the user it prompted to tap a rhythm of their choice that will serve as authentication in the app. The user taps the same rhythm five times, and if all five inputs are similar enough an average will be calculated and saved. The icon at the bottom allows the user to redo the last input.</p>
+            <h4>Logging in</h4>
             <span class="image fit"><img src="images/PassBeat-Prototype.svg" alt="PassBeat Prototype" /></span> <!-- TODO: change images to current layout! -->
-            <ul>
-                <li>Users can enter their secret rhythm by taping the button.</li>
-                <li>The input button gives visual feedback when tapped.</li>
-                <li>The level of feedback is on par with what is generally available on the market.</li>
-            </ul>
+            <p>In the login-view the user can tap their rhythm, if properly set up, to enter the app. The button is animated to give slight visual feedback when tapped and haptic feedback will be given unless it has been muted using the icon in the bottom right corner. The level of feedback the user gets is supposed to represent what is generally available.</p>
+            <p>By pressing the "Forgotten your rhythm?"-text, the user can reset their rhythm if they have forgotten it.</p>
         </div>
         <!-- TODO add video-->
         <!--<div class="inner">
@@ -57,14 +53,14 @@
         </div>
         <div class="inner">
             <h3>Technical Details</h3>
-            <span class="image fit"><img src="images/PassBeat-Vector.svg" alt="PassBeat vector representation" /></span>
+            <span class="image fit"><img src="images/diagram_time.png" alt="PassBeat vector representation" /></span>
             <p>When a user enters their PassBeat authentication code the length of each press and the pauses between them are save measured in milliseconds and saved in a vector. This means that every other value in the resulting vector represents the length of a press, and every other value represents the length of a pause.</p>
             <p>TODO: add more details</p>
             <ul>
                 <li>password setup -> reference to TapSongs paper about averaging 5 rhythms</li>
                 <li>evaluating rhythm password -> reasons for weighted error</li>
             </ul>
-            <h3>Evaluation of the App:</h3>
+            <h3>Evaluation of the App</h3>
             <ul>
                 <li>Nielen's 10 Usability Heuristics</li>
                 <li>strengths</li>

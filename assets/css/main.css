@@ -175,6 +175,7 @@ input, select, textarea {
 		margin: 0 0 2em 0;
 	}
 
+
 	h1, h2, h3, h4, h5, h6 {
 		color: #000000; /*font colour headlines*/
 		font-weight: bold;
@@ -1983,6 +1984,7 @@ input, select, textarea {
 					opacity: 0.1;
 				}
 
+
 /* TODO */
 /* Features */
 
@@ -3255,6 +3257,10 @@ input, select, textarea {
 				}
 
 			}
+
+		.wrapper a {
+			text-decoration: underline;
+		}
 /*TODO*/
 		/*background colour of wrapper alt -> used for footer on subpage*/
 		.wrapper.alt {

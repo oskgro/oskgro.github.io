@@ -3258,7 +3258,10 @@ input, select, textarea {
 
 			}
 
-		.wrapper a {
+		.wrapper p a {
+			text-decoration: underline;
+		}
+		.wrapper .sources a {
 			text-decoration: underline;
 		}
 /*TODO*/

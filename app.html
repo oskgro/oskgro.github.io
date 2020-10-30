@@ -31,13 +31,20 @@
             <p>The app will serve as a tool when conducting field studies. The idea is that the app should serve this purpose automatically once downloaded on a user's smartphone, logging any data that is deemed interesting in regard to the research questions.</p>
 
             <h3>How to use PassBeat</h3>
-            <h4>Setting a password</h4>
-            <img src="images/phone_setup_hd.png" alt="Setup prototype" style="height:600px;max-width:500px;width: expression(this.width > 500 ? 500: true);"/>
-            <p>Upon entering the setup-view, the user it prompted to tap a rhythm of their choice that will serve as authentication in the app. The user taps the same rhythm five times, and if all five inputs are similar enough an average will be calculated and saved. The icon at the bottom allows the user to redo the last input.</p>
+
             <h4>Logging in</h4>
-            <span class="image fit"><img src="images/PassBeat-Prototype.svg" alt="PassBeat Prototype" /></span> <!-- TODO: change images to current layout! -->
+            <span class="image fit"><img src="images/3_phones_new.png" alt="PassBeat Prototype" /></span> <!-- TODO: change images to current layout! -->
             <p>In the login-view the user can tap their rhythm, if properly set up, to enter the app. The button is animated to give slight visual feedback when tapped and haptic feedback will be given unless it has been muted using the icon in the bottom right corner. The level of feedback the user gets is supposed to represent what is generally available.</p>
-            <p>By pressing the "Forgotten your rhythm?"-text, the user can reset their rhythm if they have forgotten it.</p>
+            <p>By pressing the "Forgotten your rhythm?"-text, the user can reset their rhythm if they have forgotten it. In this iteration however, it takes the user to the Setup-view that is described later. Clicking the question mark-icon takes the user to an About-page where the user can read more about the app and the project. The user will also be presented with a link to this website.</p>
+
+            <h4>Results</h4>
+            <span class="image fit"><img src="images/result.png" alt="PassBeat Prototype" /></span>
+            <p>If a user tries to input a rhythm without one already being stored, the user is automatically taken to the Setup-view in order to set the rhythm. Once setup, the button instead registers the input and after a wait of 2000 milliseconds the input is compared to the stored rhythm. If the rhythms are not similar enough a Toast with the text "Access denied" is shown. If they are similar enough access is granted and the user is taken to a Result-page.</p>
+
+            <h4>Setting a password</h4>
+            <img src="images/setup_new.png" alt="Setup prototype" style="height:600px;max-width:500px;width: expression(this.width > 500 ? 500: true);"/>
+            <p>Upon entering the setup-view, the user it prompted to tap a rhythm of their choice that will serve as authentication in the app. The user taps the same rhythm five times, and if all five inputs are similar enough an average will be calculated and saved. The icon at the bottom allows the user to redo the last input.</p>
+
         </div>
         <div class="inner">
             <video width="100%" src="video/PassBeat.webm" type="video/webm" controls>

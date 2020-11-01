@@ -62,6 +62,13 @@
             <p>When a user enters their PassBeat authentication code the length of each press and the pauses between them are save measured in milliseconds and saved in a vector. This means that every other value in the resulting vector represents the length of a press, and every other value represents the length of a pause.</p>
             <p>When the user then tries to authenticate themselves, the user input is compared to the stored rhythm in order to caluclate an error. The error is then compared to the threshold. A few different ways to calculate the error were tested, including Mean Squared Error (MSE), Root Mean Squared Error (RMSE) and Squared Mean Percentage Error.</p>
             <p>In the end Squared Mean Percentage Error was chosen as the method for calculating the error as we found it to have the most significant differences in error between the correct rhythm and a similar, but wrong, rhythm. The app will, of course, not even start to compare the passwords unless they are of the same length and if the error of a single tap is too large the final error will be overlooked and access denied.</p>
+            <p>
+                To set up their rhythm-password, users have to repeat their rhythm five times to make the password more stable to small input-errors during setup. Five repetitions where chosen as according to experiments in the TapSongs paper [<a href="https://doi.org/10.1145/1622176.1622194">1</a>], the standard deviations around the mean of a sequence of rhythm samples stabilised with five or more samples.<br>
+                Example:<br>
+                The user enters the following rhythms encoded as vectors:<br>
+                <span class="inner fit"><img src="images/average_example.svg" alt="example of averaging the vectors"/></span><br>
+                The five input vectors are then averaged resulting in the vector representing the final password.
+            </p>
 
             <h3>Development and Iterations</h3>
             <p>
@@ -75,13 +82,14 @@
     </section>
 
     <!--Sources-->
-    <!--<section id="sources" class="wrapper">
+    <section id="sources" class="wrapper">
         <div class="inner">
             <h3 class="major">Sources</h3>
-            <p> [1] TODO <br>
-            </p>
+            <ol>
+                <li>Wobbrock, J. (2009). TapSongs: Tapping Rhythm-Based Passwords on a  Single Binary Sensor. <i>Proceedings of the 22nd annual ACM symposium on User interface software and technology (UIST '09)</i>, (p 93-96). DOI: <a href="https://doi.org/10.1145/1622176.1622194">10.1145/1622176.1622194</a></li>
+            </ol>
         </div>
-    </section>-->
+    </section>
 
 
 </div>

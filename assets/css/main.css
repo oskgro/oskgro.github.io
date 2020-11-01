@@ -3973,3 +3973,90 @@ input, select, textarea {
 .heading h1 {
 	position: relative;
 }
+
+
+/* Footer navigation of subpages */
+
+/*footer colour of subpage*/
+#footer-nav {
+	display: -moz-flex;
+	display: -webkit-flex;
+	display: -ms-flex;
+	display: flex;
+	background-color: #e5cc44;
+	cursor: default;
+	padding: 1.75em 2em;
+	display: none;
+}
+
+#footer-nav > nav {
+	-moz-flex: 1;
+	-webkit-flex: 1;
+	-ms-flex: 1;
+	flex: 1;
+	text-align: right;
+}
+
+#footer-nav > nav > ul {
+	margin: 0;
+	padding: 0;
+}
+
+#footer-nav > nav > ul > li {
+	display: inline-block;
+	margin-left: 1.75em;
+	padding: 0;
+	vertical-align: middle;
+}
+
+#footer-nav > nav > ul > li:first-child {
+	margin-left: 0;
+}
+
+#footer-nav > nav > ul > li a {
+	border: 0;
+	color: #000000; /*font colour in navigation on subpage*/
+	display: inline-block;
+	font-size: 0.6em;
+	font-weight: bold;
+	letter-spacing: 0.25em;
+	text-transform: uppercase;
+}
+
+/*font colour when hovering over chapter on subpage footer navigation*/
+#footer-nav > nav > ul > li a:hover {
+	color: #808080;
+}
+
+@media screen and (max-width: 736px) {
+
+	#footer-nav {
+		display: block;
+		padding: 1em 2em;
+	}
+
+}
+
+@media screen and (max-width: 480px) {
+
+	#footer-nav {
+		display: block;
+		padding: 0 2em;
+		text-align: left;
+	}
+
+	#footer-nav .title {
+		font-size: 1.25em;
+		padding: 1em 0;
+	}
+
+	#footer-nav > nav > ul > li {
+		margin-left: 1.5em;
+	}
+
+	#footer-nav > nav > ul > li a {
+		height: 2em;
+		line-height: 6em;
+	}
+
+}

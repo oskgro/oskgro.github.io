@@ -58,16 +58,54 @@
         </div>
         <div class="inner">
             <h3>Technical Details</h3>
+            <h4>Recognizing Taps</h4>
             <span class="image fit"><img src="images/diagram_time.png" alt="PassBeat vector representation" /></span>
             <p>When a user enters their PassBeat authentication code the length of each press and the pauses between them are save measured in milliseconds and saved in a vector. This means that every other value in the resulting vector represents the length of a press, and every other value represents the length of a pause.</p>
-            <p>When the user then tries to authenticate themselves, the user input is compared to the stored rhythm in order to caluclate an error. The error is then compared to the threshold. A few different ways to calculate the error were tested, including Mean Squared Error (MSE), Root Mean Squared Error (RMSE) and Squared Mean Percentage Error.</p>
+            <p>The follwing codes describes how the vector representing the rhythm is created:</p>
+            <pre>
+<code>if(buttonPressed){
+    if(!recordingRhythm){
+        // first tap of a rhythm
+        recordingRhythm = true
+        timestamp = getCurrentTime()
+    }else(recordingRhythm){
+        // n-th tap of a rhythm
+        deltaTime = getCurrentTime() - timestamp // duration of tap
+        rhyhmEncoder.addSegment(deltaTime) // add the duration of tap to rhythm-vector
+        timestamp = getCurrentTime()
+    }
+}else if(buttonReleased){
+    deltaTime = getCurrentTime() - timestamp // duration of pause
+    rhyhmEncoder.addSegment(deltaTime) // add the duration of tap to rhythm-vector
+    timestamp = getCurrentTime()
+
+    // detect the end of the rhythm input and evaluate
+    if((timestamp + 2000) < getCurrentTime){
+        recordingRhythm = false
+        if(evaluateRhythm){
+            // correct rhythm password
+            message("access granted")
+        }else{
+            // wrong rhythm password
+            message("access denied")
+        }
+    }
+}</code></pre>
+
+            <p>When the user then tries to authenticate themselves, the user input is compared to the stored rhythm in order to calculate an error. The error is then compared to the threshold. A few different ways to calculate the error were tested, including Mean Squared Error (MSE), Root Mean Squared Error (RMSE) and Squared Mean Percentage Error.</p>
             <p>In the end Squared Mean Percentage Error was chosen as the method for calculating the error as we found it to have the most significant differences in error between the correct rhythm and a similar, but wrong, rhythm. The app will, of course, not even start to compare the passwords unless they are of the same length and if the error of a single tap is too large the final error will be overlooked and access denied.</p>
+            <h4>Averaging the Input during Setup</h4>
             <p>
                 To set up their rhythm-password, users have to repeat their rhythm five times to make the password more stable to small input-errors during setup. Five repetitions where chosen as according to experiments in the TapSongs paper [<a href="https://doi.org/10.1145/1622176.1622194">1</a>], the standard deviations around the mean of a sequence of rhythm samples stabilised with five or more samples.<br>
-                Example:<br>
+                <b>Example:</b><br>
+                <span class="inner fit"><img src="images/average_example.svg" alt="example of averaging the vectors" width="100%"/></span><br>
                 The user enters the following rhythms encoded as vectors:<br>
-                <span class="inner fit"><img src="images/average_example.svg" alt="example of averaging the vectors"/></span><br>
-                The five input vectors are then averaged resulting in the vector representing the final password.
+                v1 = [103, 58, 25, 54, 152]<br>
+                v2 = [125, 40, 21, 65, 127]<br>
+                v3 = [90, 55, 31, 63, 149]<br>
+                v4 = [106, 48, 23, 58, 160]<br>
+                v5 = [99, 50, 27, 60, 135]<br>
+                The five input vectors are then element-wise averaged resulting in the vector representing the final password: [104, 50, 25, 60, 144]
             </p>
 
             <h3>Development and Iterations</h3>

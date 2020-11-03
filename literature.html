@@ -17,6 +17,13 @@
 <!-- Header -->
 <header id="header">
     <a href="index.html" class="title">PassBeat</a>
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="research.html" title="research">previous</a></li>
+            <li><a href="method.html" title="method">next</a></li>
+        </ul>
+    </nav>
 </header>
 
 <!-- Wrapper -->
@@ -27,7 +34,7 @@
         <div class="inner">
             <h1 class="major">Literature Review</h1>
             <p>
-                Even though rhythmic patterns have already been a known mean for identification for decades, as research on telegraph operators from 1895 showed [1], they are currently not used for authentication.
+                Even though rhythmic patterns have already been a known mean for identification for decades, as research on telegraph operators from 1895 showed [<a href="https://doi.org/10.1016/S0020-7373(85)80036-5">1</a>], they are currently not used for authentication.
                 Existing research in this field proposes several rhythm-based authentication schemes such as RhyAuth which uses rhythmic taps or slides on a screen as input or TapSongs which uses input from binary sensors e.g. buttons.
                 Experiments show that these authentication methods are easy to use and highly secure. However, long term research on the retentiveness of rhythm-based passwords remains to be done.
             </p>
@@ -37,21 +44,20 @@
             <ul>
                 <li>
                     <h4>RhyAuth</h4>
-                    Chen et al. [2] developed RhyAuth, a two-factor rhythm-based authentication scheme for multi-touch devices that uses rhythmic tap- or slide-inputs on an touchscreen for authentication. To unlock a mobile device using RhyAuth, users have to perform a sequence of taps or slides on the screen.<br>
+                    Chen et al. [<a href="https://doi.org/10.1109/INFOCOM.2015.7218660">2</a>] developed RhyAuth, a two-factor rhythm-based authentication scheme for multi-touch devices that uses rhythmic tap- or slide-inputs on an touchscreen for authentication. To unlock a mobile device using RhyAuth, users have to perform a sequence of taps or slides on the screen.<br>
                     Through a user experiment, the paper shows that RhyAuth is very usable for both sighted and visually impaired people, and highly secure against over the shoulder attacks. <br>
                     In the experiment, RhyAuth achieves a high true positive rate and low false negative rate. The performance of sliding inputs was slightly worse than performance of tapping inputs as tapping a rhythm is more intuitive than sliding. Therefore, tapping inputs are more consisted than sliding inputs, leading to fewer classification errors.<br>
                     To test the security, Chen et al. conducted a user experiment with different scenarios of attacks. The resilience to attacks was tested using attacker models with four different levels of capabilities, from one time observers to attackers knowing the used rhythm and how exactly the user taps or slides on the screen. The experiment showed that multi-finger tapping is more resilient to attacks than single-finger tapping due to the increased number of features extracted from multi-finger tapping inputs. Furthermore, with increased capability of the attacker the resilience of the authentication scheme decreased. Rhythm-input through sliding produced analogue results.
                 </li>
                 <li>
                     <h4>TapSongs</h4>
-                    TapSongs is a user authentication method using rhythmic input on a binary sensor such as a button developed by Wobbrock [3].
+                    TapSongs is a user authentication method using rhythmic input on a binary sensor such as a button developed by Wobbrock [<a href="https://doi.org/10.1145/1622176.1622194">3</a>].
                     These TapSong rhythms are modelled using the timing and sequence of button taps which was created by averaging a small set of user inputs. The paper shows that after just five user input samples of the rhythm, the standard deviation of the model was sufficiently stable. This model is then compared to the user input during login.<br>
                     In addition, the paper conducts an experiment concerning aural and visual eavesdropping. The results show on average only 10.7% successful imposter logins even though the tapping sound – which would be nearly silent on touch screens – was amplified by a loud-clicking button and the imposters where able to eavesdrop 15 login attempts.<br>
                     Furthermore, Wobbrock suggests examining the memorability of rhythm-based passwords, especially when they have not been entered for a longer period of time, in future work.
                 </li>
             </ul>
 
-            <!-- TODO research on music/rhythm memory vs text memory -->
         </div>
     </section>
 
@@ -60,7 +66,7 @@
         <div class="inner">
             <h3 class="inner">Sources:</h3>
             <ol class="sources">
-                <li>Umphress, D., & Williams, G. (1985). Identity verification through keyboard characteristics. International. <i>Journal of Man-Machine Studies</i>, 23(3), 263-273</li>
+                <li>Umphress, D., & Williams, G. (1985). Identity verification through keyboard characteristics. International. <i>Journal of Man-Machine Studies</i>, 23(3), 263-273, DOI: <a href="https://doi.org/10.1016/S0020-7373(85)80036-5">10.1016/S0020-7373(85)80036-5</a></li>
                 <li>Chen, Y., Sun, J., Zhang, R., & Zhang, Y. (2015). Your Song Your Way: Rhythm-Based Two-Factor Authentication for Multi-Touch Mobile Devices. <i>2015 IEEE Conference on Computer Communications (INFOCOM)</i>, (pp. 2686-2694). DOI: <a href="https://doi.org/10.1109/INFOCOM.2015.7218660">10.1109/INFOCOM.2015.7218660</a> </li>
                 <li>Wobbrock, J. (2009). TapSongs: Tapping Rhythm-Based Passwords on a  Single Binary Sensor. <i>Proceedings of the 22nd annual ACM symposium on User interface software and technology (UIST '09)</i>, (p 93-96). DOI: <a href="https://doi.org/10.1145/1622176.1622194">10.1145/1622176.1622194</a></li>
             </ol>
@@ -71,6 +77,15 @@
 
 <!-- Footer -->
 <footer id="footer" class="wrapper alt">
+    <div id="footer-nav">
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="research.html" title="research">previous</a></li>
+                <li><a href="method.html" title="method">next</a></li>
+            </ul>
+        </nav>
+    </div>
     <div class="inner">
         <ul class="menu">
             <li>&copy; PassBeat. All rights reserved.</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>

@@ -17,6 +17,13 @@
 <!-- Header -->
 <header id="header">
     <a href="index.html" class="title">PassBeat</a>
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="method.html" title="method">previous</a></li>
+            <li><a href="future-work.html" title="future work">next</a></li>
+        </ul>
+    </nav>
 </header>
 
 <!-- Wrapper -->
@@ -50,17 +57,28 @@
                 <li><strong>Error prevention: </strong>Due to the app-environment there is relatively little room for user-caused errors, unlike on websites. Error prevention has, however, been checked often throughout the development. </li>
                 <li><strong>Recognition rather than recall: </strong>Plenty of instructions are given to the user in each view and all options are always present on the screen.</li>
                 <li><strong>Flexibility and efficiency of use: </strong>Not really relevant to the project or its scope.</li>
-                <li><strong>Aesthetic and minimalist design: </strong>We have tried to keep the App's design as minimalistic as possible using as few elements as possible, and only three colours: black, white and yellow. The design is supposed to emphasize the yellow input-button in order to increase understanding.</li>
-                <li><strong>Helps users recognise, diagnose and recover from errors: </strong>Not really relevant to the scope of the project.</li>
+                <li><strong>Aesthetic and minimalist design: </strong>We have tried to keep the app's design as minimalistic as possible using as few elements as possible, and only three colours: black, white and yellow. The design is supposed to emphasize the yellow input-button in order to increase understanding.</li>
+                <li><strong>Helps users recognise, diagnose and recover from errors: </strong>The app shows Toast messages indicating whether the password was correct. This helps users to identify input mistakes without revealing the password.</li>
                 <li><strong>Help and documentation: </strong>The user is given the option to read a short "About"-section in the app and is also invited to this website for more information.</li>
             </ul>
 
+            <h3>Empirical Evaluation</h3>
+            <p>To evaluate the retentiveness of rhythm-based passwords, a small-scale field-study was conducted. Seven Participants aged between 20 and 60 where asked to set a rhythm-password. Then they had five minutes time to practice entering the password. After two and four hours respectively, they were asked to enter the password again. Furthermore, the participants were asked to compare the retentiveness and difficulty of inputting rhythm-based passwords to conventional passwords.</p>
+            <p>The study showed that the majority of participants though the rhythm-based password was easier to remember than conventional passwords. 85.7% of participants could successfully enter their rhythm-based passwords two and four hours after setup. Only one participant remembered it partially after two hours and could not login after four hours. So, the retentiveness seems to be quite good, even though, two participants though the rhythm-based password was significantly more difficult to remember. In particular, remembering the speed of the rhythm seemed to cause the difficulties.</p>
+            <span class="inner fit"><img src="images/result_difficulty.png" alt="diagram showing the results on the difficulty of remembering rhythm-based passwords" width="100%"/></span>
+            <p>When it comes to the difficulty of entering rhythm-based passwords the participants are split in two groups. About one half considered rhythm-bases passwords to be (significantly) easier to use while the other thought them to be more difficult.</p>
+            <span class="inner fit"><img src="images/result_input.png" alt="diagram showing the results on the difficulty of entering rhythm-based passwords" width="100%"/></span>
+            <p>Thus, rhythm-based passwords seem to be good to remember and one participant also commented that the ability to enter the rhythm without looking the screen was a great asset. Nonetheless, the perceived difficulty regarding usability strongly depends on the users’ personal preferences and remembering the speed of the rhythm can be a challenge.</p>
+            <p>Due to the very small number of participants, outliers can have a larger effect on the results. So, the results only give an insight into a small group of potential users and might not be representative for the general public.</p>
+
             <h3>Limitations</h3>
-            <p>One thing we have heard multiple times in feedback is that this kind of authenitcation would not suit people who are tone-deaf or has little sense of music. This is highly relevant feedback and also allowing normal text-based passwords would be a way to solve this problem. However, this solution raises problems in the potential usage of rhythm-based passwords as people, when given the option, might opt for text-based passwords due to their familiarity with it. Why learn a whole new type of password when you can stick with what you are used to?</p>
+            <p>One thing we have heard multiple times in feedback is that this kind of authentication would not suit people who are tone-deaf or has little sense of music. This is highly relevant feedback and also allowing normal text-based passwords would be a way to solve this problem. However, this solution raises problems in the potential usage of rhythm-based passwords as people, when given the option, might opt for text-based passwords due to their familiarity with it. Why learn a whole new type of password when you can stick with what you are used to?</p>
             <p>The app has also been critiqued in that shoulder-surfing still is possible despite the fact that this, in the beginning, was one of the issues that the app was going to solve. The reason why this hasn't been addressed to a significant extent is mainly due to the fact that the more secure version of the early prototypes was dropped. However, in our opinion the app is still at least equally secure as normal passwords would be, if not more so. It is still possible for the user to cover the screen with one hand while entering their rhythm with the other, or even hold the smartphone behind their back.</p>
+            <span class="inner fit"><img src="images/security.JPG" alt="hand covering phone during password input" width="100%"/></span>
+
 
             <h3>Conclusion</h3>
-            <p>This project has given us a great opportunity to research interaction design, accessibilty and mobile development and in regard to the scope we think the results have been satisfactory. However as this is the first prototype there are, as suspected, several limitations and problems with the design that should be addressed before moving on to further development. Further user testing using a large number of people would also be required to make any statistically significant conclusions. From a technical point of view these first results seem promising, but many improvements could be made to decrease the number of false positives and false negatives. </p>
+            <p>This project has given us a great opportunity to research interaction design, accessibility and mobile development and in regard to the scope we think the results have been satisfactory. However as this is the first prototype there are, as suspected, several limitations and problems with the design that should be addressed before moving on to further development. Further user testing using a large number of people would also be required to make any statistically significant conclusions. From a technical point of view these first results seem promising, but many improvements could be made to decrease the number of false positives and false negatives. </p>
 
         </div>
     </section>
@@ -69,6 +87,15 @@
 
 <!-- Footer -->
 <footer id="footer" class="wrapper alt">
+    <div id="footer-nav">
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="method.html" title="method">previous</a></li>
+                <li><a href="future-work.html" title="future work">next</a></li>
+            </ul>
+        </nav>
+    </div>
     <div class="inner">
         <ul class="menu">
             <li>&copy; PassBeat. All rights reserved.</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
